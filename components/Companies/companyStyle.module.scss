@@ -1,0 +1,54 @@
+.wrap {
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    display: block;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .active {
+    background: red;
+  }
+  h2 {
+    margin: 0;
+    text-align: center;
+  }
+  box-sizing: border-box;
+  height: 38vh;
+  padding: 0 50px;
+  flex-wrap: wrap;
+  background: silver;
+  @media screen and (max-width: 576px) {
+    height: auto;
+  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    @media screen and (max-width: 576px) {
+      flex-direction: column;
+    }
+    div {
+      background: #e57417;
+      @media screen and (max-width: 576px) {
+        width: 100px;
+      }
+    }
+    div:hover {
+      background: #0070f3;
+    }
+
+    div:enabled {
+      background: red;
+    }
+
+  }
+
+}
+
